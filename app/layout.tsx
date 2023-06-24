@@ -27,7 +27,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={`min-w-[315px] ${font.className}`}>
         <ToasterProvider />
         <SupabaseProvider>
           <UserProvider>
