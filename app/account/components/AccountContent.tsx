@@ -20,7 +20,7 @@ const AccountContent = () => {
 
   useEffect(() => {
     if (!isLoading && !user) router.replace("/");
-  }, []);
+  }, [isLoading, user, router]);
 
   const redirectToCustomerPortal = async () => {
     setLoading(true);
