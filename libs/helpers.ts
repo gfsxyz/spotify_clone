@@ -1,4 +1,4 @@
-import { Prices } from "@/types";
+import { Price } from "@/types";
 
 export const getUrl = () => {
   let url =
@@ -17,7 +17,7 @@ export const postData = async ({
   data,
 }: {
   url: string;
-  data?: { prices: Prices };
+  data?: { price: Price };
 }) => {
   console.log("POST REQUEST:", url, data);
 
